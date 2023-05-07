@@ -35,10 +35,7 @@ function WeatherApp() {
     }
   };
 
-  const handleNightModeToggle = () => {
-    setIsNightMode(!isNightMode);
-  };
-
+  
   return (
     <div className={`weatherCard ${isNightMode ? "nightMode" : ""}`}>
       {weatherData ? (
@@ -72,9 +69,7 @@ function WeatherApp() {
               {unit}
             </button>
             </div>
-            <input type="toggle" className="nightModeBtn" onClick={handleNightModeToggle}>
-              {isNightMode ? "Day Mode" : "Night Mode"}
-            </input>
+            
           </div>
         </>
       ) : (
