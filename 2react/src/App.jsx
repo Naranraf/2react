@@ -44,7 +44,7 @@ function WeatherApp() {
             <h2>{weatherData.name}</h2>
             
           </div>
-          <div className="body">
+          <div >
             <img
               className="weatherIcon"
               src={`http://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`}
