@@ -5,7 +5,7 @@ import "./App.css";
 function WeatherApp() {
   const [weatherData, setWeatherData] = useState(null);
   const [unit, setUnit] = useState("Celsius");
-  const [isNightMode, setIsNightMode] = useState(false);
+  
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(
